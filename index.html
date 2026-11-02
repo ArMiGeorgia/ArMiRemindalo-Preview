@@ -7,8 +7,8 @@
 .preview{width:min(100%,430px)}h1{font-size:23px;margin:0 0 8px}p{font-size:13px;color:#b7c5d7;line-height:1.5}
 .phone{background:#101723;border:1px solid #344358;border-radius:25px;padding:14px;min-height:530px;display:flex;flex-direction:column;box-shadow:0 20px 55px #0005}
 .header{font-size:24px;font-weight:700;margin-bottom:10px}.period{font-size:14px;color:#b7c5d7}.space{flex:1}
-.sheet{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:10px}
-.tile{height:82px;border-radius:12px;background:#263a52;display:flex;justify-content:center;align-items:center;border:0;cursor:pointer;padding:24px}
+.sheet{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-top:10px}
+.tile{height:82px;border-radius:12px;background:#263a52;display:flex;justify-content:center;align-items:center;border:0;cursor:pointer;padding:14px}
 .tile img{display:block;width:100%;height:100%;object-fit:contain}
 .tile:focus-visible{outline:2px solid #9de3e6;outline-offset:2px}
 .nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
@@ -19,7 +19,7 @@ a{color:#a9d4ff}
 </style></head><body>
 <main class="preview">
 <h1>ArMi Remindalo</h1>
-<p>Предпросмотр нижнего меню. Иконки берутся из SVG-файлов проекта при публикации, без сборки APK.</p>
+<p>Предпросмотр нижнего меню. Четыре кнопки в текущем стиле. Это отдельный HTML-макет, не автоматическая копия MAUI.</p>
 <section class="phone" aria-label="Макет экрана Android">
 <div class="header">НАПОМИНАЛО</div><div class="period">Календарь</div><div class="space"></div>
 <div class="nav"><div>Календарь</div><div>+</div><div>Настройки</div></div>
@@ -27,6 +27,7 @@ a{color:#a9d4ff}
 <button class="tile" type="button" data-label="Дни рождения" aria-label="Дни рождения"><img src="icons/birthday_cake.svg" alt=""></button>
 <button class="tile" type="button" data-label="Финансы" aria-label="Финансы"><img src="icons/finance_lari.svg" alt=""></button>
 <button class="tile" type="button" data-label="Списки" aria-label="Списки"><img src="icons/checklist.svg" alt=""></button>
+<button class="tile" type="button" data-label="Дни памяти" aria-label="Дни памяти"><img src="icons/memorial_skull.svg" alt=""></button>
 </div>
 </section>
 <div id="status" class="note" role="status">Нажатие на иконку показывает название раздела.</div>
